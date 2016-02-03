@@ -5,7 +5,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := libbinary_parse
 LOCAL_CPP_EXTENSION := .cc
 LOCAL_SRC_FILES:= \
-    src/binary_parse/cached_paged_byte_array.cc, \
+    src/binary_parse/cached_paged_byte_array.cc \
     src/binary_parse/range_checked_byte_ptr.cc
 LOCAL_CPPFALGS := -Wsign-compare
 include $(BUILD_SHARED_LIBRARY)
