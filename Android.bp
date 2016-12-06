@@ -31,6 +31,7 @@ cc_library_shared {
         "src/tiff_parser.cc",
         "src/piex.cc",
     ],
+    export_include_dirs: ["."],
     static_libs: [
         "libbinary_parse",
         "libimage_type_recognition",
