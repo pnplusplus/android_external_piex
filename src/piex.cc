@@ -692,6 +692,11 @@ Error GetPreviewImageData(StreamInterface* data,
       return kUnsupported;
   }
 }
+Error GetPreviewImageData(StreamInterface* data,
+                          PreviewImageData* preview_image_data)
+{
+  return(GetPreviewImageData(data,preview_image_data,nullptr));
+}
 
 bool GetDngInformation(StreamInterface* data, std::uint32_t* width,
                        std::uint32_t* height,
